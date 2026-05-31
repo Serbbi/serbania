@@ -1,6 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "assets.codepen.io",
+      },
+      {
+        protocol: "https",
+        hostname: "www.rug.nl",
+      },
+      {
+        protocol: "https",
+        hostname: "uxwing.com",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
